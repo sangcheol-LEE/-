@@ -21,8 +21,12 @@ list.insertAt(2, 2)
 list.insertAt(3, 3)
 list.insertAt(4, 4)
 list.insertAt(2, 10)
-
-
-
 list.printAll();
+
+console.log("===== clear ======");
+list.clear()
+list.printAll()
+
+
+
 
