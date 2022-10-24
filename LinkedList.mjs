@@ -15,7 +15,23 @@ class LinkedList {
 
 
   insertAt(index, data) {
-    
+      if(index > this.count || index < 0) {
+        throw new Error("범위를 벗어났습니다.")
+      }
+      let newNode = new Node(data);
+
+      if(index == 0 ) {
+        newNode.next = this.head;
+        this.head = newNode
+      } else {
+        // 삽입하려는 노드 바로 전까지 가기 위한 변수를 하나 만든다.
+        let currentNode = this.head;
+        for(let i = 0; i < index - 1; i++) {
+          currentNode = currentNode.next
+        }
+        newNode.next = currentNode.next
+      }
+      this.count++
     }
 }
 
