@@ -27,6 +27,37 @@ console.log("===== clear ======");
 list.clear()
 list.printAll()
 
+console.log("==== insertLast ====")
+list.insertLast(0)
+list.insertLast(1)
+list.insertLast(2)
+list.printAll()
+
+console.log("==== deleteAt() ====")
+list.deleteAt(0);
+list.printAll();
+list.deleteAt(1);
+list.printAll();
+
+
+
+console.log('==== deleteLast ====');
+list.insertLast(5)
+list.deleteLast();
+list.deleteLast();
+list.printAll()
+
+console.log("==== getNodeAt ====")
+list.insertLast(1)
+list.insertLast(2)
+list.insertLast(3)
+list.insertLast(4)
+list.insertLast(5)
+
+let secondNodeAt = list.getNodeAt(2)
+
+console.log(secondNodeAt)
+
 
 
 
