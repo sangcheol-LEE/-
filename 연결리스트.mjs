@@ -11,6 +11,8 @@ class LinkedList {
     this.count = 0;
   }
 
+  // 모든 노드를 지워주는 함수 
+
   // 연결리스트의 모든 원소를 출력하는 함수
   printAll() {
     let currentNode = this.head;
