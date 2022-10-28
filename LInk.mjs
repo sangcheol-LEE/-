@@ -26,7 +26,7 @@ class LinkedList {
         let currentNode = this.head;
 
         for(let i = 0; i < index - 1; i++) {
-          currentNode = currentNode.next;
+          currentNode = currentNode.next; 
         }
         newNode.next = currentNode.next;
         currentNode.next = newNode;
