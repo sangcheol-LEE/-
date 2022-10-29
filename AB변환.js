@@ -3,15 +3,12 @@
 // 만들 수 없으면 0을 return 하도록 solution 함수를 완성해보세요.
 
 const solution = (before, after) => {
-  let answer = 0;
-
-  if([...before].reverse().join("") === after) {
-    answer = 1
-  } else {
-    answer = 0
-  }
-  return answer;
+  let answer = [...before].sort().join("") === [...after].sort().join("") ? 1 : 0
+  console.log(answer)
+  return answer
 }
 
 solution("olleh","hello")
 solution("allpe","apple")
+solution("banana","ananab")
+
