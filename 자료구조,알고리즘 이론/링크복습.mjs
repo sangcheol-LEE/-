@@ -139,7 +139,7 @@ class LinkedList {
     } else {
       // 원하는 인덱스까지 노드를 타고 들어가서 새로 삽입하는 경우
       // 만약 인덱스 3에 삽입한다면, head노드에서 세 번째 떨어진 노드에 삽입하는 경우입니다.
-      // currentNode로 세 번째 떨어진 노드 전까지 이동하고, 
+      // currentNode로 세 번째 떨어진 노드 전까지 이동하고,
       // newNode가 currentNode가 가리키던 노드 즉, 3번째 노드를 가리키게 한다.
       // 그리고 currentNode가 새로운 노드(data)를 가리키게 하면 끝.
 

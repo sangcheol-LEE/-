@@ -1,4 +1,4 @@
-import { Node, LinkedList } from "./링크복습.mjs";
+import { Node, LinkedList } from "./자료구조,알고리즘 이론/링크복습.mjs";
 
 let node1 = new Node(1);
 let node2 = new Node(2);
