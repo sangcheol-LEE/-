@@ -14,7 +14,6 @@ const solution = (my_string) => {
       return acc + cur
     },0)
   }
-  console.log(answer)
   return answer;
 }
 solution("aAb1B2cC34oOp") // 37
