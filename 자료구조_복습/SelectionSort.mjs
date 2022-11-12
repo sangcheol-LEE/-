@@ -4,27 +4,29 @@
 
 */
 
+  const SelectionSort = (arr) => {
+    for(let i = 0; i < arr.length - 1; i++) {
+      let minumumIndex = i;
 
-const SelectionSolt = (arr) => {
-  for(let i = 0; i < arr.length - 1; i++) {
-    let minimumIndex = i
-
-    for(let j = i + 1; j < arr.length; j++) {
-      if(arr[j] < arr[minimumIndex]) {
-        minimumIndex = j
+      for(let j = i + 1; j < arr.length; j++) {
+        if(arr[j] < arr[minumumIndex]) {
+          minumumIndex = j
+        }
       }
-    }
 
-    let temp = arr[i];
-    arr[i] = arr[minimumIndex]
-    arr[minimumIndex] = temp
+      let temp = arr[i]
+
+      arr[i] = arr[minumumIndex];
+      arr[minumumIndex] = temp
+    }
   }
-}
+
+
 
 const x = [3,2,5,1,23,31,6,8];
 console.log(x)
 console.log("===== before sort ======")
-SelectionSolt(x)
+SelectionSort(x)
 console.log(x)
 
 
