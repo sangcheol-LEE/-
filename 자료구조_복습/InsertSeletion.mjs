@@ -1,29 +1,28 @@
-const insert = arr => {
-
-  for(let i = 1; i < arr.length; i++) {
-    let 정렬되지_않은_함수 = arr[i];
+const section = arr => {
+  for(let i = 1; i<arr.length; i++) {
+    let first = arr[i]
     let j;
 
     for(j = i - 1; j >= 0; j--) {
-      if(arr[j] > 정렬되지_않은_함수) {
-        arr[j + 1] = arr[j]
-      }else {
+      if(arr[j] > first) {
+        arr[j + 1] = first;
+      } else {
         break;
       }
     }
-    arr[j + 1] = 정렬되지_않은_함수
+    arr[j + 1] = first;
   }
-
 }
 
+const x = [3,6,8,12,1,4]
 
-const x = [6,3,16,9,1]
-
-console.log("정렬 전")
 console.log(x)
 
-insert(x)
+console.log("========정렬전")
+section(x)
 
-console.log("정렬 후")
 console.log(x)
+
+
+
 
